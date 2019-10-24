@@ -1,0 +1,195 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "becky",
+        "last": "sims"
+      },
+      "location": {
+        "street": "6894 windsor road",
+        "city": "stirling",
+        "state": "durham",
+        "postcode": "Q4 8YT"
+      },
+      "email": "becky.sims@example.com",
+      "login": {
+        "username": "brownduck326",
+        "password": "misfits",
+        "salt": "NuJHyJ9Z",
+        "md5": "960ee724a9ae685e791d39a7534ccede",
+        "sha1": "a9837a14008dbd568288755379a5399810b213e5",
+        "sha256": "906aafd03d3a43c7028d926e332f6727e8184b10bd402e4e8be12622cfdd1d76"
+      },
+      "registered": 1392563875,
+      "dob": 1202273878,
+      "phone": "017684 66711",
+      "cell": "0765-055-205",
+      "id": {
+        "name":,
+        "value": "PA 88 25 20 D"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/67.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/67.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/67.jpg"
+      },
+      "nat": "GB"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "miss",
+        "first": "amelia",
+        "last": "anderson"
+      },
+      "location": {
+        "street": "3836 15th st",
+        "city": "chelsea",
+        "state": "nova scotia",
+        "postcode": 98687
+      },
+      "email": "amelia.anderson@example.com",
+      "login": {
+        "username": "bigmouse254",
+        "password": "hiphop",
+        "salt": "oCEoSXBs",
+        "md5": "bce84d2cb4fbfd20c542c21469e65487",
+        "sha1": "175839c22b07e965450f6ee7b9566b6ed917d59c",
+        "sha256": "c14c6157433b38f7c3ac318e5d4eeb387abf3ca2c628b8274c8ea3b5596fbc7a"
+      },
+      "registered": 1265446788,
+      "dob": 1303140109,
+      "phone": "579-405-6483",
+      "cell": "975-544-3669",
+      "id": {
+        "name": "",
+        "value": null
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/39.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/39.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/39.jpg"
+      },
+      "nat": "CA"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "vilho",
+        "last": "lampinen"
+      },
+      "location": {
+        "street": "8676 pispalan valtatie",
+        "city": "lemland",
+        "state": "ostrobothnia",
+        "postcode": 94321
+      },
+      "email": "vilho.lampinen@example.com",
+      "login": {
+        "username": "ticklishpeacock397",
+        "password": "woohoo",
+        "salt": "YAPPRpaz",
+        "md5": "e5e4acecc37115644b86bb2c06b56c26",
+        "sha1": "3a6dd12bf5f4d2d50d0948f5f05c13bf0f210ff2",
+        "sha256": "b99ffbfce667dc13fbb49a35373590be6097d707d8459bb9a07a53be6d980a98"
+      },
+      "registered": 942997547,
+      "dob": 1210193121,
+      "phone": "05-160-232",
+      "cell": "047-858-44-33",
+      "id": {
+        "name": "HETU",
+        "value": "61909833-F"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/8.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/8.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/8.jpg"
+      },
+      "nat": "FI"
+    },
+    {
+      "gender": "female",
+      "name": {
+        "title": "madame",
+        "first": "maëlle",
+        "last": "robert"
+      },
+      "location": {
+        "street": "7147 avenue des ternes",
+        "city": "bettens",
+        "state": "solothurn",
+        "postcode": 2530
+      },
+      "email": "maëlle.robert@example.com",
+      "login": {
+        "username": "lazytiger956",
+        "password": "billy1",
+        "salt": "Bb6U96Uk",
+        "md5": "faae6a57788a9bdad2ae81cdbfba06c8",
+        "sha1": "828d1fc80393fcb87d3612ab7c1382349aa29859",
+        "sha256": "cef66e719270e4d844470d88244ca54a5159c0eca4c044a8fc819700f3a7ae73"
+      },
+      "registered": 1260415595,
+      "dob": 1229301510,
+      "phone": "(508)-182-1981",
+      "cell": "(600)-476-8767",
+      "id": {
+        "name": "AVS",
+        "value": "756.MBAN.YBVZ.32"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/women/23.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/women/23.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/women/23.jpg"
+      },
+      "nat": "CH"
+    },
+    {
+      "gender": "male",
+      "name": {
+        "title": "mr",
+        "first": "kasper",
+        "last": "palo"
+      },
+      "location": {
+        "street": "3294 hermiankatu",
+        "city": "kokemäki",
+        "state": "ostrobothnia",
+        "postcode": 84319
+      },
+      "email": "kasper.palo@example.com",
+      "login": {
+        "username": "goldengorilla470",
+        "password": "redfish",
+        "salt": "QJIQaCmy",
+        "md5": "846f343d077efabf013a538c66655ce9",
+        "sha1": "77f8f4aafcfb76a55b64db284ac17390c2a29ff6",
+        "sha256": "a00a070683358f1c67bca73063f95922cfd2de96eaa41827d4f992634cc2866f"
+      },
+      "registered": 925286905,
+      "dob": 676624556,
+      "phone": "04-877-704",
+      "cell": "040-179-20-13",
+      "id": {
+        "name": "HETU",
+        "value": "63847217-A"
+      },
+      "picture": {
+        "large": "https://randomuser.me/api/portraits/men/58.jpg",
+        "medium": "https://randomuser.me/api/portraits/med/men/58.jpg",
+        "thumbnail": "https://randomuser.me/api/portraits/thumb/men/58.jpg"
+      },
+      "nat": "FI"
+    }
+  ],
+  "info": {
+    "seed": "foobar",
+    "results": 5,
+    "page": 1,
+    "version": "1.0"
+  }
+}
