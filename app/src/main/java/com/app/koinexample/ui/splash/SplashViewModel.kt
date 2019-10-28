@@ -1,17 +1,14 @@
 package com.app.koinexample.ui.splash
 
 import android.util.Log
-import androidx.databinding.ObservableField
 import androidx.lifecycle.*
-import com.app.koinexample.BaseObservableViewModel
 import com.app.koinexample.DispatcherProvider
 import com.app.koinexample.data.DataManager
 import com.app.koinexample.model.User
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class SplashViewModel(var dataManager: DataManager, var dispatcherProvider: DispatcherProvider) :
-    BaseObservableViewModel() {
+class SplashViewModel(var dataManager: DataManager, var dispatcherProvider: DispatcherProvider) : ViewModel(){
 
     var TAG = "SplashViewModel"
 
@@ -59,6 +56,6 @@ class SplashViewModel(var dataManager: DataManager, var dispatcherProvider: Disp
     private fun setState(newState: UserListState) {
         Log.e(TAG, "setting state : $newState")
         this.state.value = newState
-        notifyChange()
+//        notifyChange()
     }
 }
