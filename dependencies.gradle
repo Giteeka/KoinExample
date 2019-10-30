@@ -25,5 +25,8 @@ ext {
     espressoVersion = '3.2.0'
     androidXJunitVersion = '1.1.1'
     workVersion = '2.2.0'
-    koinVersion = '1.0.2'
+    koinVersion = '2.0.1'
+    koinTestVersion = '2.0.1'
+
+    glideVersion = '4.9.0'
 }

@@ -1,11 +1,13 @@
 package com.app.koinexample.model
 
+import android.os.Parcel
+import android.os.Parcelable
 import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-class User {
+class User() : Parcelable {
 
     @PrimaryKey(autoGenerate = true)
 //    var id: Long = 0
@@ -24,7 +26,7 @@ class User {
     var login: Login? = null
 
     var registered: Int? = null
-    var dob: Int? = null
+    var dob: String? = null
     var phone: String? = null
     var cell: String? = null
 
@@ -32,6 +34,42 @@ class User {
     var picture: Picture? = null
 
     var nat: String? = null
+
+    constructor(parcel: Parcel) : this() {
+        _ID = parcel.readLong()
+        gender = parcel.readString()
+        email = parcel.readString()
+        registered = parcel.readValue(Int::class.java.classLoader) as? Int
+        dob = parcel.readString()
+        phone = parcel.readString()
+        cell = parcel.readString()
+        nat = parcel.readString()
+    }
+
+    override fun writeToParcel(parcel: Parcel, flags: Int) {
+        parcel.writeLong(_ID)
+        parcel.writeString(gender)
+        parcel.writeString(email)
+        parcel.writeValue(registered)
+        parcel.writeValue(dob)
+        parcel.writeString(phone)
+        parcel.writeString(cell)
+        parcel.writeString(nat)
+    }
+
+    override fun describeContents(): Int {
+        return 0
+    }
+
+    companion object CREATOR : Parcelable.Creator<User> {
+        override fun createFromParcel(parcel: Parcel): User {
+            return User(parcel)
+        }
+
+        override fun newArray(size: Int): Array<User?> {
+            return arrayOfNulls(size)
+        }
+    }
 }
 
 

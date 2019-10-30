@@ -1,7 +1,10 @@
-package com.app.koinexample.ui.splash
+package com.app.koinexample.ui.list
 
 import android.util.Log
-import androidx.lifecycle.*
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Transformations
+import androidx.lifecycle.viewModelScope
 import com.app.koinexample.BaseObservableViewModel
 import com.app.koinexample.DispatcherProvider
 import com.app.koinexample.data.DataManager
@@ -10,7 +13,7 @@ import com.app.koinexample.ui.UserListState
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
-class SplashViewModel(var dataManager: DataManager, var dispatcherProvider: DispatcherProvider) : BaseObservableViewModel(){
+class ListViewModel(var dataManager: DataManager, var dispatcherProvider: DispatcherProvider) : BaseObservableViewModel(){
 
     var TAG = "SplashViewModel"
 
@@ -33,7 +36,7 @@ class SplashViewModel(var dataManager: DataManager, var dispatcherProvider: Disp
         (it is UserListState.Error)
     }
     val errorMessage: LiveData<String> = Transformations.map(state) {
-        (it as? UserListState.Error)?.error?.message
+        (it as? UserListState.Error)?.error?.localizedMessage
     }
 
     fun loadData() {
@@ -41,7 +44,7 @@ class SplashViewModel(var dataManager: DataManager, var dispatcherProvider: Disp
         viewModelScope.launch {
             val newState = withContext(dispatcherProvider.IO) {
                 try {
-                    val users = dataManager.insertDataForFirstTime()
+                    val users = dataManager.getRandomUserFromDatabase()
                     Log.e(TAG, "Total users: " + users?.size)
                     return@withContext UserListState.Success(users)
                 } catch (e: Throwable) {

@@ -1,4 +1,4 @@
-package com.app.koinexample.ui.splash
+package com.app.koinexample.ui
 
 import com.app.koinexample.model.User
 

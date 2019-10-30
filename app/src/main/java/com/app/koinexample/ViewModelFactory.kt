@@ -1,12 +1,8 @@
 package com.app.koinexample
 
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.app.koinexample.data.AppDataManager
 import com.app.koinexample.data.DataManager
-import com.app.koinexample.data.local.RandomUserDatabase
-import com.app.koinexample.data.remote.RandomUserAPI
 import com.app.koinexample.ui.splash.SplashViewModel
 
 class ViewModelFactory(var dataManager: DataManager, var dispatcherProvider: DispatcherProvider) :
